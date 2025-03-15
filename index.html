@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Libros</h1>
+    </header>
+    <main>
+        <form id="bookForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" required>
+            
+            <label for="pdfFile">Archivo PDF:</label>
+            <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+            
+            <button type="submit">Registrar Libro</button>
+        </form>
+        <div id="bookList">
+            <h2>Libros Registrados</h2>
+            <ul id="books"></ul>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
